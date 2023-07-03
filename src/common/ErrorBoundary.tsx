@@ -29,8 +29,7 @@ export class ErrorBoundary extends PureComponent<
   }
 
   componentDidCatch(receivedError: unknown): void {
-    // console.warn(`An error has occurred: ${receivedError}`);
-    console.warn(receivedError);
+    console.warn(`An error has occurred: ${receivedError}`);
   }
 
   render(): ReactNode {
